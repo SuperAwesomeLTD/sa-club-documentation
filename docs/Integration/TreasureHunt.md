@@ -22,4 +22,4 @@ saUserApi.events.hasTriggeredEvents({eventIds: [991, 992, 993, 994]})
 	})
 ```
 
-[Image]
+![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-club-documentation/develop/docs/img/triggered-events.png "User Treasure Hunt List Example")
