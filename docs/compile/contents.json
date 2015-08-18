@@ -34,7 +34,7 @@
                     "text": "<p>Node.js</p>\n<p>To include our backend SDK, simply add the following dependency to your project:</p>\n<pre><code class=\"lang-json\">{\n    “dependencies”{\n        “superawesome”: “https://s3-eu-west-1.amazonaws.com/tmp-fix-github-ddos/sa-platform-node-sdk-7370c7401677685c0fd8338452083a64f6b5e3ce.tar.gz”\n    }\n}\n</code></pre>\n<p>To use it, require the module and instantiate the Application API with your api keys.</p>\n<pre><code class=\"lang-javascript\">var SuperAwesomeAppApi = require(&#39;superawesome&#39;);\nvar saAppApi = new SuperAwesomeAppApi({\n    saAppId: ‘mlp-friendship-club’, \n    saAppApiKey: ‘z7IIRjPePAgP4i8M2fjYWoYPmWi2tVc3’,\n    saPlatformUrl: ‘https://staging.superawesome.club’,\n    loginRedirectUrl: ‘/go/there/after/login’,\n    logoutRedirectUrl: ‘/go/there/after/logout’\n});\n</code></pre>\n<p>Then, add our router to your express application:</p>\n<pre><code class=\"lang-javascript\">app.use(saAppApi.router);\n</code></pre>\n<p>This will:</p>\n<ul>\n<li>Add the urls needed to implement the authentication (see below).</li>\n<li>On every request, it will give you access to the User API by adding the req.saUserApi attribute to the request.</li>\n</ul>\n<p>You can modify where the user will be redirected after the login/logout by modifying respectively loginRedirectUrl and logoutRedirectUrl.</p>\n"
                 },
                 {
-                    "name": "Backend SDK",
+                    "name": "Frontend SDK",
                     "sections": [
                         {
                             "name": "Javascript",
