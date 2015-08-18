@@ -87,6 +87,10 @@
                 {
                     "name": "Errors",
                     "text": "Reference/Errors.md" 
+                },
+                {
+                    "name": "Application API",
+                    "text": "Reference/ApplicationAPI.md" 
                 }
             ]
         },
