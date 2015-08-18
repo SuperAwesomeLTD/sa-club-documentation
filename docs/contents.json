@@ -79,9 +79,6 @@
             ]      
         },
         {
-            "name": "Verifiable Parental Consent"
-        },
-        {
             "name": "Reference",
             "sections": [
                 {
@@ -168,6 +165,20 @@
                                 {
                                     "name": "readNotification",
                                     "text": "Reference/UserAPI/Notifications/readNotification.html"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "User API (Frontend)",
+                    "sections": [
+                        {
+                            "name": "Authentication",
+                            "sections": [
+                                {
+                                    "name": "signIn",
+                                    "text": "Reference/UserAPIFront/Authentication/signIn.html"
                                 }
                             ]
                         }
