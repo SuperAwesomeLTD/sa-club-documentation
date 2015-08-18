@@ -94,7 +94,12 @@
                 },
                 {
                     "name": "User API",
-                    "text": "Reference/UserAPI.md"
+                    "sections": [
+                        {
+                            "name": "getUserId",
+                            "text": "Reference/UserAPI/getUserId.html"
+                        }
+                    ]
                 }
             ]
         },
