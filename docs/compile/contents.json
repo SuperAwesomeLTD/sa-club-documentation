@@ -86,7 +86,7 @@
             "sections": [
                 {
                     "name": "Errors",
-                    "text": "<table>\n<thead>\n<tr>\n<th>First Header</th>\n<th>Second Header</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Content Cell</td>\n<td>Content Cell</td>\n</tr>\n<tr>\n<td>Content Cell</td>\n<td>Content Cell</td>\n</tr>\n</tbody>\n</table>\n"
+                    "text": "<table>\n<thead>\n<tr>\n<th>Error name</th>\n<th>Meaning in the app api</th>\n<th>Meaning in the user api</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>AuthenticationError</td>\n<td>Wrong app api key</td>\n<td>The user is not authenticated</td>\n</tr>\n<tr>\n<td>AuthorisationError</td>\n<td>You don’t have enough rights to perform the operation<br>For example, the requested feature is not enabled for your app</td>\n<td>You don’t have enough rights to perform the operation<br> For example, your are trying to get points with an event to this app</td>\n</tr>\n<tr>\n<td>ValidationError</td>\n<td>Incorrect parameters</td>\n<td>Incorrect parameters</td>\n</tr>\n<tr>\n<td>Error</td>\n<td>Any other error</td>\n<td>Any other error</td>\n</tr>\n</tbody>\n</table>\n"
                 }
             ]
         },
