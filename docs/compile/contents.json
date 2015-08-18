@@ -179,6 +179,27 @@
                                 {
                                     "name": "signIn",
                                     "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.authentication.signIn()</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>Start the sign in/sign up process. This will redirect the user.</td>\n        </tr>\n    </tbody>\n</table>\n"
+                                },
+                                {
+                                    "name": "signOut",
+                                    "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.authentication.signOut()</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>Sign out the user. This will redirect the user</td>\n        </tr>\n    </tbody>\n</table>\n"
+                                },
+                                {
+                                    "name": "addUserListener",
+                                    "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.authentication.addUserListener(callback)</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                The callback will be called every time the user is updated (username/data updated, points won, …)\n                <br>\n                The callback will receive the same parameters as the success handler of authentication.getUser()\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Games",
+                            "sections": [
+                                {
+                                    "name": "addLevelLeaderboardListener",
+                                    "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.games.addLevelLeaderBoardListener(callback)</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                The callback will be called every time the leaderboard is updated.\n                <br>\n                The parameters are the same as games.getLevelLeaderboard()\n                <br>\n                The callback will receive the same parameters as the success handler of games.getLevelLeaderboard()\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
+                                },
+                                {
+                                    "name": "addGameLeaderboardListener",
+                                    "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.games.addGameLeaderBoardListener(callback)</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                The callback will be called every time the leaderboard is updated.\n                <br>\n                The parameters are the same as games.getGameLeaderboard()\n                <br>\n                The callback will receive the same parameters as the success handler of games.getGameLeaderboard()\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
                                 }
                             ]
                         }

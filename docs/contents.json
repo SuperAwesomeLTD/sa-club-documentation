@@ -179,6 +179,27 @@
                                 {
                                     "name": "signIn",
                                     "text": "Reference/UserAPIFront/Authentication/signIn.html"
+                                },
+                                {
+                                    "name": "signOut",
+                                    "text": "Reference/UserAPIFront/Authentication/signOut.html"
+                                },
+                                {
+                                    "name": "addUserListener",
+                                    "text": "Reference/UserAPIFront/Authentication/addUserListener.html"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Games",
+                            "sections": [
+                                {
+                                    "name": "addLevelLeaderboardListener",
+                                    "text": "Reference/UserAPIFront/Games/addLevelLeaderboardListener.html"
+                                },
+                                {
+                                    "name": "addGameLeaderboardListener",
+                                    "text": "Reference/UserAPIFront/Games/addGameLeaderboardListener.html"
                                 }
                             ]
                         }
