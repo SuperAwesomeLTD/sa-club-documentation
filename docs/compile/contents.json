@@ -202,6 +202,15 @@
                                     "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.games.addGameLeaderBoardListener(callback)</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                The callback will be called every time the leaderboard is updated.\n                <br>\n                The parameters are the same as games.getGameLeaderboard()\n                <br>\n                The callback will receive the same parameters as the success handler of games.getGameLeaderboard()\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
                                 }
                             ]
+                        },
+                        {
+                            "name": "Points",
+                            "sections": [
+                                {
+                                    "name": "addStatisticsListener",
+                                    "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.points.addStatisticsListener(callback)</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                The callback will be called every time the balance of the user is updated.\n                <br>\n                The callback will receive the same parameters as the success handler of points.getStatistics()\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
+                                }
+                            ]
                         }
                     ]
                 }
