@@ -151,23 +151,31 @@
                                 },
                                 {
                                     "name": "getGameScore",
-                                    "text": "Reference/UserAPI/Games/getGameScore.html"                                    
+                                    "text": "Reference/UserAPI/Games/getGameScore.html"
                                 },
                                 {
                                     "name": "getGamesScores",
-                                    "text": "Reference/UserAPI/Games/getGamesScores.html"                                    
+                                    "text": "Reference/UserAPI/Games/getGamesScores.html"
                                 },
                                 {
                                     "name": "getGameLeaderboard",
-                                    "text": "Reference/UserAPI/Games/getGameLeaderboard.html"                                    
+                                    "text": "Reference/UserAPI/Games/getGameLeaderboard.html"
                                 },
                                 {
                                     "name": "getLevelScore",
-                                    "text": "Reference/UserAPI/Games/getLevelScore.html"                                    
+                                    "text": "Reference/UserAPI/Games/getLevelScore.html"
                                 },
                                 {
                                     "name": "getLevelLeaderboard",
-                                    "text": "Reference/UserAPI/Games/getLevelLeaderboard.html"                                    
+                                    "text": "Reference/UserAPI/Games/getLevelLeaderboard.html"
+                                },
+                                {
+                                    "name": "getApplicationScore",
+                                    "text": "Reference/UserAPI/Games/getApplicationScore.html"
+                                },
+                                {
+                                    "name": "getApplicationLeaderBoard",
+                                    "text": "Reference/UserAPI/Games/getApplicationLeaderboard.html"
                                 },
                                 {
                                     "name": "submitScore",
@@ -185,6 +193,19 @@
                                 {
                                     "name": "readNotification",
                                     "text": "Reference/UserAPI/Notifications/readNotification.html"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Points",
+                            "sections": [
+                                {
+                                    "name": "getGameStatistics",
+                                    "text": "Reference/UserAPI/Points/getGameStatistics.html"
+                                },
+                                {
+                                    "name": "getApplicationStatistics",
+                                    "text": "Reference/UserAPI/Points/getApplicationStatistics.html"
                                 }
                             ]
                         }

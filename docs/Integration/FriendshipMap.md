@@ -2,7 +2,7 @@
 
 https://s3-eu-west-1.amazonaws.com/tmp-fix-github-ddos/sa-platform-node-sdk-a300741a0cdfe50391d84463b6434d88cf3131bc.tar.gz
 
-```json
+```javascript
 saAppApi.users.getUsersMap().then(function(response){
     // Do something
 })

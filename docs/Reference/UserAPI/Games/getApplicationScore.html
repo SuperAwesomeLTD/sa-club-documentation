@@ -1,0 +1,59 @@
+<table>
+	<thead>
+		<tr>
+			<th colspan="4">Method</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">saUserApi.games.getApplicationScore(parameters)</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th colspan="4">Parameters</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>name</td>
+			<td>type</td>
+			<td>default</td>
+			<td>comment</td>
+		</tr>
+		<tr>
+			<td>start</td>
+			<td>Date</td>
+			<td></td>
+			<td>start date for the query</td>
+		</tr>
+		<tr>
+			<td>end</td>
+			<td>Date</td>
+			<td></td>
+			<td>end date for the query</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th colspan="4">Response</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">
+				A promise that will:
+				<ul>
+					<li>be resolved with the score of the user in the app between the given dates
+<pre><code class="lang-json">{
+    score: 12,
+    rank: 7
+}</code></pre>
+					</li>
+					<div>or</div>
+					<li>be rejected with an error</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
