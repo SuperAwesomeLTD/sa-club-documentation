@@ -1,7 +1,7 @@
 <table>
 	<thead>
 		<tr>
-			<td colspan="4">Method</td>
+			<th colspan="4">Method</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11,7 +11,7 @@
 	</tbody>
 	<thead>
 		<tr>
-			<td colspan="4">Parameters</td>
+			<th colspan="4">Parameters</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -30,7 +30,7 @@
 	</tbody>
 	<thead>
 		<tr>
-			<td colspan="4">Response</td>
+			<th colspan="4">Response</th>
 		</tr>
 	</thead>
 	<tbody>
