@@ -25,7 +25,7 @@ This will also allow you to perform more high level operations. For example:
 
 These operations can also be performed directly through our dashboard.
 
-![](/img/user-api-backend.png "Application API usage flow")
+![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-club-documentation/develop/docs/img/user-api-backend.png "Application API usage flow")
 
 If you need to call the Application API, the flow will be:
 1. The user will perform an action on your application
