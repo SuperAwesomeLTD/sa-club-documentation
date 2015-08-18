@@ -260,16 +260,12 @@
 				A promise that will:
 				<ul>
 					<li>be resolved with a game object
-						<pre>
-							<code class="lang-json">
-								{
-								    id: 42,
-								    name: ‘Game abc’,
-								    // Indicates if the best score is the maximum or the minimum
-								    bestScoreFunction: ‘min’ 
-								}
-							</code>
-						</pre>
+						<pre><code class="lang-json">{
+						    id: 42,
+						    name: ‘Game abc’,
+						    // Indicates if the best score is the maximum or the minimum
+						    bestScoreFunction: ‘min’ 
+						}</code></pre>
 					</li>
 					<div>or</div>
 					<li>be rejected with an error</li>
