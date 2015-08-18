@@ -1,8 +1,8 @@
-[image]
+![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-club-documentation/develop/docs/img/login-flow.png "User login flow")
 
 1. The user will click on the login button on your website
 
-[image]
+![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-club-documentation/develop/docs/img/login-button.png "Login button")
 
 2. The click handler will call our frontend SDK
 
@@ -10,12 +10,12 @@
 <button class="sa_sign_in" onclick="saUserApi.authentication.signIn()"></button>
 ```
 
- [image]
+![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-club-documentation/develop/docs/img/login-code.png "Frontend code example")
 
 3. The user will be redirected to the SuperAwesome Club
 4. The user will arrive to our login/account creation page
 
-[image]
+![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-club-documentation/develop/docs/img/club-login-page.png "Redirection Login Page Example")
 
 5. The user will login or create an account
 6. The user will be redirected to your backend

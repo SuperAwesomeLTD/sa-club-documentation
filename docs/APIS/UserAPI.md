@@ -18,7 +18,7 @@ From the backend, the flow is the same as the Application API.
 
 From the frontend:
 
-[Image]
+![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-club-documentation/develop/docs/img/user-api-frontend.png "Application API usage flow (frontend)")
 
 1. The user will perform an action on your application
 2. This will trigger a call to our API

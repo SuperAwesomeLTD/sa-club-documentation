@@ -4,7 +4,7 @@ For example, internally in the Awesome Bar, we listen to:
 * The current user notifications, to display them in real time.
 * The current user, to update the current balance of the user.
 
-[Image]
+![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-club-documentation/develop/docs/img/notifications.png "API notifications example")
 
 1. The user visits a page or perform an action on a page
 2. This will trigger a call to our API
