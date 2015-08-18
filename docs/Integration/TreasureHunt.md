@@ -1,6 +1,6 @@
 The treasure hunt items are displayed through treasure hunt placements
 
-[Image]
+![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-club-documentation/develop/docs/img/treasure-hunt.png "Treasure Hunt Example")
 
 ```javascript
 saUserApi.treasureHunts.getPlacementElement({placementId: 999999})
