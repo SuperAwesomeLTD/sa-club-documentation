@@ -220,6 +220,15 @@
                                     "text": "Reference/UserAPIFront/Notifications/addNewNotificationListener.html"
                                 }
                             ]
+                        },
+                        {
+                            "name": "Treasure Hunts",
+                            "sections": [
+                                {
+                                    "name": "getPlacementElement",
+                                    "text": "Reference/UserAPIFront/TreasureHunts/getPlacementElement.html"
+                                }
+                            ]                            
                         }
                     ]
                 }
