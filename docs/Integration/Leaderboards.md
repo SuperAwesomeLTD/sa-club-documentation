@@ -9,3 +9,14 @@ saUserApi.games.addGameLeaderBoardListener({gameId: '?????'}),
 	}
 );
 ```
+
+From the backend, you can get the leaderboard of the application
+```javascript
+saUserApi.games.getApplicationScore({
+    // Be careful, month index starts at 0 in javascript...
+    start: new Date(2015, 6, 10),
+    end: new Date(2015, 7, 11)
+}).then(function(response){
+    // Do something
+})
+```

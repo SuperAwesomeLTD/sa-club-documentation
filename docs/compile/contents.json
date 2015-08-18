@@ -90,7 +90,7 @@
                 },
                 {
                     "name": "Leaderboards",
-                    "text": "<p>You can get a snapshot of a leaderboard from the backend and the frontend of your application.</p>\n<p>From the frontend, you can also listen for updates to award the leaderboards as soon as the scores are submitted.</p>\n<pre><code class=\"lang-javascript\">saUserApi.games.addGameLeaderBoardListener({gameId: &#39;?????&#39;}),\n    function (leaderBoard) {\n        // ....\n    }\n);\n</code></pre>\n"
+                    "text": "<p>You can get a snapshot of a leaderboard from the backend and the frontend of your application.</p>\n<p>From the frontend, you can also listen for updates to award the leaderboards as soon as the scores are submitted.</p>\n<pre><code class=\"lang-javascript\">saUserApi.games.addGameLeaderBoardListener({gameId: &#39;?????&#39;}),\n    function (leaderBoard) {\n        // ....\n    }\n);\n</code></pre>\n<p>From the backend, you can get the leaderboard of the application</p>\n<pre><code class=\"lang-javascript\">saUserApi.games.getApplicationScore({\n    // Be careful, month index starts at 0 in javascript...\n    start: new Date(2015, 6, 10),\n    end: new Date(2015, 7, 11)\n}).then(function(response){\n    // Do something\n})\n</code></pre>\n"
                 },
                 {
                     "name": "Friendship Map",
@@ -201,7 +201,7 @@
                             "sections": [
                                 {
                                     "name": "getGameStatistics",
-                                    "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.points.getApplicationStatistics()</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Response</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                A promise that will:\n                <ul>\n                    <li>\n                        be resolved with the total points awarded by the application. Example: \n<pre><code class=\"lang-json\">{\n    totalPointsAwarded: 999\n}</code></pre>\n                    </li>\n                    <div>or</div>\n                    <li>be rejected with an error</li>\n                </ul>\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
+                                    "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.points.getGameStatistics()</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Response</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                A promise that will:\n                <ul>\n                    <li>\n                        be resolved with the total points awarded by the game. Example: \n<pre><code class=\"lang-json\">{\n    totalPointsAwarded: 999\n}</code></pre>\n                    </li>\n                    <div>or</div>\n                    <li>be rejected with an error</li>\n                </ul>\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
                                 },
                                 {
                                     "name": "getApplicationStatistics",
