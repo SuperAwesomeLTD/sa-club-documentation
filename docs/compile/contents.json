@@ -225,7 +225,7 @@
                             "name": "Treasure Hunts",
                             "sections": [
                                 {
-                                    "name": "getPlacementElement",
+                                    "name": "Get Placement",
                                     "text": "<table>\n    <thead>\n        <tr>\n            <th colspan=\"4\">Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td colspan=\"4\">saUserApi.treasureHunts.getPlacementElement(parameters)</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th colspan=\"4\">Parameters</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>name</td>\n            <td>type</td>\n            <td>default</td>\n            <td>comment</td>\n        </tr>\n        <tr>\n            <td>placementId</td>\n            <td>integer</td>\n            <td></td>\n            <td>the ids of the placement</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th colspan=\"4\">Response</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td colspan=\"4\">\n                A promise that will:\n                <ul>\n                    <li>be resolved with a DOM element containing the treasure hunt item</li>\n                    <div>or</div>\n                    <li>be rejected with an error</li>\n                </ul>\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
                                 }
                             ]

@@ -225,7 +225,7 @@
                             "name": "Treasure Hunts",
                             "sections": [
                                 {
-                                    "name": "getPlacementElement",
+                                    "name": "Get Placement",
                                     "text": "Reference/UserAPIFront/TreasureHunts/getPlacementElement.html"
                                 }
                             ]                            
