@@ -2,15 +2,15 @@
 
 https://s3-eu-west-1.amazonaws.com/tmp-fix-github-ddos/sa-platform-node-sdk-a300741a0cdfe50391d84463b6434d88cf3131bc.tar.gz
 
-'''json
+```json
 saAppApi.users.getUsersMap().then(function(response){
     // Do something
 })
-'''
+```
 
 The results will be an objects mapping ISO 3166-2 to the number of users in that area:
 
-'''json
+```json
 {
     'GB-CON': {name: "Cornwall", count: 91},
     'GB-COV': {name: "Coventry", count: 16},
