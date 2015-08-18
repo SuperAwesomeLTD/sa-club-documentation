@@ -124,6 +124,27 @@
                                     "text": "Reference/UserAPI/Events/triggerEventWithToken.html"
                                 }
                             ]
+                        },
+                        {
+                            "name": "Games",
+                            "sections": [
+                                {
+                                    "name": "getGame",
+                                    "text": "Reference/UserAPI/Games/getGame.html"
+                                },
+                                {
+                                    "name": "getGameScore",
+                                    "text": "Reference/UserAPI/Games/getGameScore.html"                                    
+                                },
+                                {
+                                    "name": "getGamesScores",
+                                    "text": "Reference/UserAPI/Games/getGamesScores.html"                                    
+                                },
+                                {
+                                    "name": "getGameLeaderboard",
+                                    "text": "Reference/UserAPI/Games/getGameLeaderboard.html"                                    
+                                }
+                            ]
                         }
                     ]
                 }
