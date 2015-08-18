@@ -1,0 +1,55 @@
+<table>
+	<thead>
+		<tr>
+			<th colspan="4">Method</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">saUserApi.events.hasTriggeredEvents(parameters)</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th colspan="4">Parameters</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>name</td>
+			<td>type</td>
+			<td>default</td>
+			<td>comment</td>
+		</tr>
+		<tr>
+			<td>eventIds</td>
+			<td>array of integers</td>
+			<td>[ ]</td>
+			<td>the ids of the events</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th colspan="4">Response</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">
+				A promise that will:
+				<ul>
+					<li>be resolved with an object mapping the event ids to booleans indicating if the events have been triggered.
+<pre><code class="lang-json">{
+	101: true,
+	102: false,
+	103: true,
+	...
+}</code></pre>
+					</li>
+					<div>or</div>
+					<li>be rejected with an error</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>

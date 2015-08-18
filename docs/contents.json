@@ -107,7 +107,23 @@
                                     "text": "Reference/UserAPI/Authentication/getUser.html"
                                 }
                             ]
-
+                        },
+                        {
+                            "name": "Events",
+                            "sections": [
+                                {
+                                    "name": "hasTriggeredEvent",
+                                    "text": "Reference/UserAPI/Events/hasTriggeredEvent.html"
+                                },
+                                {
+                                    "name": "hasTriggeredEvents",
+                                    "text": "Reference/UserAPI/Events/hasTriggeredEvents.html"
+                                },
+                                {
+                                    "name": "triggerEventWithToken",
+                                    "text": "Reference/UserAPI/Events/triggerEventWithToken.html"
+                                }
+                            ]
                         }
                     ]
                 }
