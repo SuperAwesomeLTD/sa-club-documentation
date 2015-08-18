@@ -3,12 +3,71 @@
     "text": "KWS_SDK.md",
     "sections": [
         {
-            "name": "Getting Started",
-            "text": "GettingStarted.md"
+            "name": "Introduction",
+            "text": "Introduction.md"
         },
         {
-            "name": "Technical Support",
-            "text": "TechnicalSupport.md"
+            "name": "APIs",
+            "text": "APIs.md",
+            "sections": [
+                {
+                    "name": "Application API",
+                    "text": "APIS/AppAPI.md"
+                },
+                {
+                    "name": "User API",
+                    "text": "APIS/UserAPI.md",
+                    "sections": [
+                        {
+                            "name": "Data Notifications",
+                            "text": "APIS/User/DataNotifications.md"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SDKs",
+            "sections": [
+                {
+                    "name": "Backend SDK",
+                    "text": "SDKS/BackendSDK.md"
+                },
+                {
+                    "name": "Backend SDK",
+                    "sections": [
+                        {
+                            "name": "Javascript",
+                            "text": "SDKS/Frontend/Javascript.md"
+                        },
+                        {
+                            "name": "Integration",
+                            "sections": [
+                                {
+                                    "name": "Login",
+                                    "text": "SDKS/Frontend/Integration/Login.md"                                   
+                                },
+                                {
+                                    "name": "Actions",
+                                    "text": "SDKS/Frontend/Integration/Actions.md"
+                                },
+                                {
+                                    "name": "Notifications",
+                                    "text": "SDKS/Frontend/Integration/Notifications.md"
+                                },
+                                {
+                                    "name": "Leaderboards",
+                                    "text": "SDKS/Frontend/Integration/Leaderboards.md"
+                                },
+                                {
+                                    "name": "Treasure Hunt",
+                                    "text": "SDKS/Frontend/Integration/TreasureHunt.md"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

@@ -1,0 +1,28 @@
+The operation that you can perform include, for example:
+* Points:
+	* Get the balance of the current user
+	* Get an history of the transactions
+* Notifications:
+	* Get the notifications of the user
+	* “Read” notifications
+* Games:
+	* Get the rank of the user
+	* Submit scores
+* Painting competitions:
+	* Submit entries
+
+
+These operations can be performed from the frontend or from the backend of your application.
+
+From the backend, the flow is the same as the Application API.
+
+From the frontend:
+
+[Image]
+
+1. The user will perform an action on your application
+2. This will trigger a call to our API
+3. Our SDK will make a request to our API
+4. Our API will process the request and send a response
+5. Our SDK will process the response and send it to your application
+6. Your application will process the response and update the page

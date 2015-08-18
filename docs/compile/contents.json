@@ -3,12 +3,71 @@
     "text": "<p>The SuperAwesome KWS SDK (Software Development Kit) lets you to easily integrate third-party apps with KWS.</p>\n",
     "sections": [
         {
-            "name": "Getting Started",
-            "text": "<p>Getting started page in construction...</p>\n"
+            "name": "Introduction",
+            "text": "<p>This document will help you get started with the integration of your application with the SuperAwesome Club. It describes how you will interact with our APIs and what the user journey will look like.</p>\n<p>The diagrams are color coded to allow you to quickly identify what kind of interactions are involved:</p>\n<ul>\n<li>The interactions with the user are in orange.</li>\n<li>The redirections are in light blue.</li>\n<li>The websockets are in green.</li>\n<li>The other interactions are in red.</li>\n</ul>\n<p>Each diagram are accompanied with a detailed description of these interactions.\nThe interactions that you will have to implement in your application are in black.\nThe interactions that are performed by our SDKs or by our platform are in grey.</p>\n"
         },
         {
-            "name": "Technical Support",
-            "text": "<p>If you have any questions or you need technical support, please, do not hesitate to contact us at <a href=\"devsupport@superawesome.tv\">devsupport@superawesome.tv</a>. We will make every attempt to answer your inquiry as quickly as possible.</p>\n"
+            "name": "APIs",
+            "text": "<p>Our platform offers two APIs:</p>\n<ul>\n<li>The Application API: It allows you to perform requests on behalf of your application. The majority of the actions that do not require an authenticated user fall into this category.</li>\n<li>The User API: It allows you to perform an operation on behalf on an authenticated user.</li>\n</ul>\n",
+            "sections": [
+                {
+                    "name": "Application API",
+                    "text": "<p>The operation that you can perform include, for example:</p>\n<ul>\n<li>Users:<ul>\n<li>List all the users of the application</li>\n<li>Reading their data (i.e. the emails), if you are authorised to do so </li>\n</ul>\n</li>\n<li>Notifications:<ul>\n<li>List the notifications sent by your application</li>\n<li>Notify the users</li>\n</ul>\n</li>\n<li>Events: (the events are used to reward Awesome Points through transactions)<ul>\n<li>Create new events</li>\n</ul>\n</li>\n<li>Transactions:<ul>\n<li>List all the transactions of your application (to find out when and how you awarded points to users)</li>\n</ul>\n</li>\n<li>Treasure hunts:<ul>\n<li>List the treasure hunts running on your application</li>\n<li>Set up a new treasure hunt</li>\n<li>Create new treasure hunt placements (to control where the items will appear)</li>\n</ul>\n</li>\n<li>Painting competitions:<ul>\n<li>Create new competitions</li>\n<li>Approve/reject the entries</li>\n<li>Download the entries</li>\n</ul>\n</li>\n</ul>\n<p>This will also allow you to perform more high level operations. For example:</p>\n<ul>\n<li>See how many points were awarded by your application</li>\n<li>Set which permissions your application will require</li>\n</ul>\n<p>These operations can also be performed directly through our dashboard.</p>\n<p>[Image]</p>\n<p>If you need to call the Application API, the flow will be:</p>\n<ol>\n<li>The user will perform an action on your application</li>\n<li>This will trigger an ajax request to your backend</li>\n<li>Your backend will call a function of our SDK</li>\n<li>Our SDK will make a request to our API</li>\n<li>Our API will process the request and send a response</li>\n<li>Our SDK will process the response and send it to your application</li>\n<li>Your application will process the response and send it back to the frontend</li>\n<li>The fronted will process the response and update the page</li>\n</ol>\n<p>If you call the Application API via a script, only the steps 3-6 will apply.</p>\n<p>If you use our dashboard, you will be the user and only 1 and 8 will apply.</p>\n"
+                },
+                {
+                    "name": "User API",
+                    "text": "<p>The operation that you can perform include, for example:</p>\n<ul>\n<li>Points:<ul>\n<li>Get the balance of the current user</li>\n<li>Get an history of the transactions</li>\n</ul>\n</li>\n<li>Notifications:<ul>\n<li>Get the notifications of the user</li>\n<li>“Read” notifications</li>\n</ul>\n</li>\n<li>Games:<ul>\n<li>Get the rank of the user</li>\n<li>Submit scores</li>\n</ul>\n</li>\n<li>Painting competitions:<ul>\n<li>Submit entries</li>\n</ul>\n</li>\n</ul>\n<p>These operations can be performed from the frontend or from the backend of your application.</p>\n<p>From the backend, the flow is the same as the Application API.</p>\n<p>From the frontend:</p>\n<p>[Image]</p>\n<ol>\n<li>The user will perform an action on your application</li>\n<li>This will trigger a call to our API</li>\n<li>Our SDK will make a request to our API</li>\n<li>Our API will process the request and send a response</li>\n<li>Our SDK will process the response and send it to your application</li>\n<li>Your application will process the response and update the page</li>\n</ol>\n",
+                    "sections": [
+                        {
+                            "name": "Data Notifications",
+                            "text": "<p>To allow you to create a dynamic website, the frontend version of our User API also allows you to listen some changes. For example, you can listen to leaderboards, to allow the users to view the latest scores without having to refresh the page.</p>\n<p>For example, internally in the Awesome Bar, we listen to:</p>\n<ul>\n<li>The current user notifications, to display them in real time.</li>\n<li>The current user, to update the current balance of the user.</li>\n</ul>\n<p>[Image]</p>\n<ol>\n<li>The user visits a page or perform an action on a page</li>\n<li>This will trigger a call to our API</li>\n<li>When an update is available, it will automatically be sent to you</li>\n<li>Our SDK will process it and send it to your listener</li>\n<li>Your application will process it and update the page</li>\n</ol>\n"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SDKs",
+            "sections": [
+                {
+                    "name": "Backend SDK",
+                    "text": "<p>Node.js</p>\n<p>To include our backend SDK, simply add the following dependency to your project:</p>\n<pre><code class=\"lang-json\">{\n    “dependencies”{\n        “superawesome”: “https://s3-eu-west-1.amazonaws.com/tmp-fix-github-ddos/sa-platform-node-sdk-7370c7401677685c0fd8338452083a64f6b5e3ce.tar.gz”\n    }\n}\n</code></pre>\n<p>To use it, require the module and instantiate the Application API with your api keys.</p>\n<pre><code class=\"lang-javascript\">var SuperAwesomeAppApi = require(&#39;superawesome&#39;);\nvar saAppApi = new SuperAwesomeAppApi({\n    saAppId: ‘mlp-friendship-club’, \n    saAppApiKey: ‘z7IIRjPePAgP4i8M2fjYWoYPmWi2tVc3’,\n    saPlatformUrl: ‘https://staging.superawesome.club’,\n    loginRedirectUrl: ‘/go/there/after/login’,\n    logoutRedirectUrl: ‘/go/there/after/logout’\n});\n</code></pre>\n<p>Then, add our router to your express application:</p>\n<pre><code class=\"lang-javascript\">app.use(saAppApi.router);\n</code></pre>\n<p>This will:</p>\n<ul>\n<li>Add the urls needed to implement the authentication (see below).</li>\n<li>On every request, it will give you access to the User API by adding the req.saUserApi attribute to the request.</li>\n</ul>\n<p>You can modify where the user will be redirected after the login/logout by modifying respectively loginRedirectUrl and logoutRedirectUrl.</p>\n"
+                },
+                {
+                    "name": "Backend SDK",
+                    "sections": [
+                        {
+                            "name": "Javascript",
+                            "text": "<p>To include our frontend SDK, add the following script to all the pages of your project:</p>\n<pre><code class=\"lang-html\">&lt;script src=&quot;https://staging.superawesome.club/sdk/sdk.js&quot;&gt;&lt;/script&gt;\n</code></pre>\n<p>To use it, instantiate the User API:</p>\n<pre><code class=\"lang-javascript\">var saUserApi = new SuperAwesomeUserApi({\n    saAppId: ‘mlp-friendship-club’\n});\n</code></pre>\n"
+                        },
+                        {
+                            "name": "Integration",
+                            "sections": [
+                                {
+                                    "name": "Login",
+                                    "text": "<p>[image]</p>\n<ol>\n<li>The user will click on the login button on your website</li>\n</ol>\n<p>[image]</p>\n<ol>\n<li>The click handler will call our frontend SDK</li>\n</ol>\n<pre><code class=\"lang-html\">&lt;button class=&quot;sa_sign_in&quot; onclick=&quot;saUserApi.authentication.signIn()&quot;&gt;&lt;/button&gt;\n</code></pre>\n<p> [image]</p>\n<ol>\n<li>The user will be redirected to the SuperAwesome Club</li>\n<li>The user will arrive to our login/account creation page</li>\n</ol>\n<p>[image]</p>\n<ol>\n<li>The user will login or create an account</li>\n<li>The user will be redirected to your backend</li>\n<li>Our router will handle the request</li>\n<li>Our backend SDK will check with the club that the authentication is valid</li>\n<li>The club will send back the information needed to complete the process</li>\n<li>Our backend SDK will do an internal redirection to the page of your choice (by default, the homepage)</li>\n<li>You will render that page</li>\n<li>And show the user that he is authenticated</li>\n</ol>\n<pre><code class=\"lang-javascript\">saUserApi.authentication.getUser().then(function(user){ \n    // Do something\n})\n</code></pre>\n"
+                                },
+                                {
+                                    "name": "Actions",
+                                    "text": "<p>The points are awarded through events.</p>\n<p>Each event has a unique token that can be used to trigger the event for the current user.</p>\n<pre><code class=\"lang-javascript\">saUserApi.events.triggerEventWithToken({token: &#39;abcdefg&#39;, points: 5});\n</code></pre>\n<p>The maximum number of points that you can award is set on the event.</p>\n<p>This can be done from the frontend and the backend.</p>\n<p>When you need to allow the user to “redeem a code”, you can simply ask them for the code and then use it as the token of the event.</p>\n"
+                                },
+                                {
+                                    "name": "Notifications",
+                                    "text": "<p>Notifications can be sent only from the backend of your application.</p>\n<pre><code class=\"lang-javascript\">saUserApi.notifications.notify({\n    description: &#39;This is a notification&#39;,\n    targetUserIds: [userId]\n});\n</code></pre>\n<p>A notification can be sent to multiple users at the same time.</p>\n<p>To check if a user has performed an action, you can trigger a specific event and award 0 points to the user. For example, this can be used to check if a user has already watched a video.</p>\n"
+                                },
+                                {
+                                    "name": "Leaderboards",
+                                    "text": "<p>You can get a snapshot of a leaderboard from the backend and the frontend of your application.</p>\n<p>From the frontend, you can also listen for updates to award the leaderboards as soon as the scores are submitted.</p>\n<pre><code class=\"lang-javascript\">saUserApi.games.addGameLeaderBoardListener({gameId: &#39;?????&#39;}),\n    function (leaderBoard) {\n        // ....\n    }\n);\n</code></pre>\n"
+                                },
+                                {
+                                    "name": "Treasure Hunt",
+                                    "text": "<p>The treasure hunt items are displayed through treasure hunt placements</p>\n<p>[Image]</p>\n<pre><code class=\"lang-javascript\">saUserApi.treasureHunts.getPlacementElement({placementId: 999999})\n    .then(function (element) {\n        // ....\n        $(element).appendTo($(&#39;fooBar&#39;));\n    })\n</code></pre>\n<p>Most of the time, getPlacementElement won’t return anything. From time to time, it will return a DOM element containing the image. If the user clicks on the image, he will trigger an event, get a notification and be redirected the the page defined on the treasure hunt item.</p>\n"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
