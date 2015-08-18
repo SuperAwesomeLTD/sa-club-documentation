@@ -1,0 +1,59 @@
+<table>
+	<thead>
+		<tr>
+			<th colspan="4">Method</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">saUserApi.games.getGamesScores(parameters)</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th colspan="4">Parameters</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>name</td>
+			<td>type</td>
+			<td>default</td>
+			<td>comment</td>
+		</tr>
+		<tr>
+			<td>gameIds</td>
+			<td>array of integers</td>
+			<td></td>
+			<td>the ids of the games</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th colspan="4">Response</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">
+				A promise that will:
+				<ul>
+					<li>be resolved with an object mapping the game ids to the global score of the user in the games (across all the levels, respectively)
+<pre><code class="lang-json">{
+	1: {
+        score: 999,
+        rank: 1234
+    },
+    2: {
+        score: 998,
+        rank: 1237
+    }
+}</code></pre>
+					</li>
+					<div>or</div>
+					<li>be rejected with an error</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>

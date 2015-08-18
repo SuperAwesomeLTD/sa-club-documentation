@@ -143,6 +143,18 @@
                                 {
                                     "name": "getGameLeaderboard",
                                     "text": "Reference/UserAPI/Games/getGameLeaderboard.html"                                    
+                                },
+                                {
+                                    "name": "getLevelScore",
+                                    "text": "Reference/UserAPI/Games/getLevelScore.html"                                    
+                                },
+                                {
+                                    "name": "getLevelLeaderboard",
+                                    "text": "Reference/UserAPI/Games/getLevelLeaderboard.html"                                    
+                                },
+                                {
+                                    "name": "submitScore",
+                                    "text": "Reference/UserAPI/Games/submitScore.html"
                                 }
                             ]
                         }

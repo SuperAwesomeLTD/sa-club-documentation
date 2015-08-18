@@ -1,0 +1,53 @@
+<table>
+	<thead>
+		<tr>
+			<th colspan="4">Method</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">saUserApi.games.getLevelScore(parameters)</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th colspan="4">Parameters</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>name</td>
+			<td>type</td>
+			<td>default</td>
+			<td>comment</td>
+		</tr>
+		<tr>
+			<td>levelId</td>
+			<td>integer</td>
+			<td></td>
+			<td>the id of the level</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th colspan="4">Response</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">
+				A promise that will:
+				<ul>
+					<li>be resolved with the global score of the user in the level
+<pre><code class="lang-json">{
+	score: 999,
+    rank: 1234
+}</code></pre>
+					</li>
+					<div>or</div>
+					<li>be rejected with an error</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
