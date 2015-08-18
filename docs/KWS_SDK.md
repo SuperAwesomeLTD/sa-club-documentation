@@ -1,0 +1,1 @@
+The SuperAwesome KWS SDK (Software Development Kit) lets you to easily integrate third-party apps with KWS.

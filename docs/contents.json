@@ -1,0 +1,14 @@
+{
+    "name": "KWS SDK",
+    "text": "KWS_SDK.md",
+    "sections": [
+        {
+            "name": "Getting Started",
+            "text": "GettingStarted.md"
+        },
+        {
+            "name": "Technical Support",
+            "text": "TechnicalSupport.md"
+        }
+    ]
+}

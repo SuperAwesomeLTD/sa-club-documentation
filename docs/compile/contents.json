@@ -1,0 +1,14 @@
+{
+    "name": "KWS SDK",
+    "text": "<p>The SuperAwesome KWS SDK (Software Development Kit) lets you to easily integrate third-party apps with KWS.</p>\n",
+    "sections": [
+        {
+            "name": "Getting Started",
+            "text": "<p>Getting started page in construction...</p>\n"
+        },
+        {
+            "name": "Technical Support",
+            "text": "<p>If you have any questions or you need technical support, please, do not hesitate to contact us at <a href=\"devsupport@superawesome.tv\">devsupport@superawesome.tv</a>. We will make every attempt to answer your inquiry as quickly as possible.</p>\n"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "sa-club-documentation",
+  "version": "0.0.1",
+  "description": "SuperAwesome KWS SDK",
+  "dependencies":{
+    "sa-docs-to-json": "SuperAwesomeLTD/sa-docs-to-json"
+  },
+  "devDependencies": {
+    "gulp-imports": "MarcusLongmuir/gulp-imports",
+    "gulp-nodemon": "*",
+    "gulp-util": "^2.2.14",
+    "gulp": "^3.6.1",
+    "gulp-less": "^1.2.3",
+    "gulp-uglify": "^0.2.1",
+    "gulp-concat": "^2.2.0",
+    "gulp-watch": "^0.6.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-plumber": "^0.6.1"
+  }
+}
