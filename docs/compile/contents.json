@@ -4,7 +4,7 @@
     "sections": [
         {
             "name": "Introduction",
-            "text": "<p>This document will help you get started with the integration of your application with the SuperAwesome Club. It describes how you will interact with our APIs and what the user journey will look like.</p>\n<p>The diagrams are color coded to allow you to quickly identify what kind of interactions are involved:</p>\n<ul>\n<li>The interactions with the user are in orange.</li>\n<li>The redirections are in light blue.</li>\n<li>The websockets are in green.</li>\n<li>The other interactions are in red.</li>\n</ul>\n<p>Each diagram are accompanied with a detailed description of these interactions.\nThe interactions that you will have to implement in your application are in black.\nThe interactions that are performed by our SDKs or by our platform are in grey.</p>\n"
+            "text": "<p>This document will help you get started with the integration of your application with the SuperAwesome Club. It describes how you will interact with our APIs and what the user journey will look like.</p>\n<p>The diagrams are color coded to allow you to quickly identify what kind of interactions are involved:</p>\n<ul>\n<li>The interactions with the user are in <span style=\"color: orange;\">orange</span>.</li>\n<li>The redirections are in light blue.</li>\n<li>The websockets are in green.</li>\n<li>The other interactions are in red.</li>\n</ul>\n<p>Each diagram are accompanied with a detailed description of these interactions.\nThe interactions that you will have to implement in your application are in black.\nThe interactions that are performed by our SDKs or by our platform are in grey.</p>\n"
         },
         {
             "name": "APIs",
