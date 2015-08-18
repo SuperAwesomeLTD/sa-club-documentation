@@ -185,7 +185,7 @@
                                     "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.authentication.signOut()</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>Sign out the user. This will redirect the user</td>\n        </tr>\n    </tbody>\n</table>\n"
                                 },
                                 {
-                                    "name": "addUserListener",
+                                    "name": "User Listener",
                                     "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.authentication.addUserListener(callback)</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                The callback will be called every time the user is updated (username/data updated, points won, …)\n                <br>\n                The callback will receive the same parameters as the success handler of authentication.getUser()\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
                                 }
                             ]
@@ -194,11 +194,11 @@
                             "name": "Games",
                             "sections": [
                                 {
-                                    "name": "addLevelLeader...",
+                                    "name": "Level Listener",
                                     "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.games.addLevelLeaderBoardListener(callback)</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                The callback will be called every time the leaderboard is updated.\n                <br>\n                The parameters are the same as games.getLevelLeaderboard()\n                <br>\n                The callback will receive the same parameters as the success handler of games.getLevelLeaderboard()\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
                                 },
                                 {
-                                    "name": "addGameLeader...",
+                                    "name": "Game Listener",
                                     "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.games.addGameLeaderBoardListener(callback)</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                The callback will be called every time the leaderboard is updated.\n                <br>\n                The parameters are the same as games.getGameLeaderboard()\n                <br>\n                The callback will receive the same parameters as the success handler of games.getGameLeaderboard()\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
                                 }
                             ]
@@ -207,8 +207,17 @@
                             "name": "Points",
                             "sections": [
                                 {
-                                    "name": "addStatisticsListener",
+                                    "name": "Statistics Listener",
                                     "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.points.addStatisticsListener(callback)</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                The callback will be called every time the balance of the user is updated.\n                <br>\n                The callback will receive the same parameters as the success handler of points.getStatistics()\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Notifications",
+                            "sections": [
+                                {
+                                    "name": "Notifications Listener",
+                                    "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.notifications.addNewNotificationListener(callback)</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                The callback will be called every time the user receives a new notification.\n                <br>\n                The callback will receive an object with the same properties as one of the results received by the success handler of notifications.getNotifications()\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
                                 }
                             ]
                         }

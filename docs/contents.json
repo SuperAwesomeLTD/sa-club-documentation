@@ -185,7 +185,7 @@
                                     "text": "Reference/UserAPIFront/Authentication/signOut.html"
                                 },
                                 {
-                                    "name": "addUserListener",
+                                    "name": "User Listener",
                                     "text": "Reference/UserAPIFront/Authentication/addUserListener.html"
                                 }
                             ]
@@ -194,11 +194,11 @@
                             "name": "Games",
                             "sections": [
                                 {
-                                    "name": "addLevelLeader...",
+                                    "name": "Level Listener",
                                     "text": "Reference/UserAPIFront/Games/addLevelLeaderboardListener.html"
                                 },
                                 {
-                                    "name": "addGameLeader...",
+                                    "name": "Game Listener",
                                     "text": "Reference/UserAPIFront/Games/addGameLeaderboardListener.html"
                                 }
                             ]
@@ -207,8 +207,17 @@
                             "name": "Points",
                             "sections": [
                                 {
-                                    "name": "addStatisticsListener",
+                                    "name": "Statistics Listener",
                                     "text": "Reference/UserAPIFront/Points/addStatisticsListener.html"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Notifications",
+                            "sections": [
+                                {
+                                    "name": "Notifications Listener",
+                                    "text": "Reference/UserAPIFront/Notifications/addNewNotificationListener.html"
                                 }
                             ]
                         }
