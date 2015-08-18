@@ -1,5 +1,3 @@
-Node.js
-
 To include our backend SDK, simply add the following dependency to your project:
 
 ```json

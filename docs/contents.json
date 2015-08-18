@@ -31,7 +31,12 @@
             "sections": [
                 {
                     "name": "Backend SDK",
-                    "text": "SDKS/BackendSDK.md"
+                    "sections": [
+                        {
+                            "name": "NodeJs",
+                            "text": "SDKS/Backend/NodeJs.md"
+                        }
+                    ]
                 },
                 {
                     "name": "Frontend SDK",
@@ -39,35 +44,39 @@
                         {
                             "name": "Javascript",
                             "text": "SDKS/Frontend/Javascript.md"
-                        },
-                        {
-                            "name": "Integration",
-                            "sections": [
-                                {
-                                    "name": "Login",
-                                    "text": "SDKS/Frontend/Integration/Login.md"                                   
-                                },
-                                {
-                                    "name": "Actions",
-                                    "text": "SDKS/Frontend/Integration/Actions.md"
-                                },
-                                {
-                                    "name": "Notifications",
-                                    "text": "SDKS/Frontend/Integration/Notifications.md"
-                                },
-                                {
-                                    "name": "Leaderboards",
-                                    "text": "SDKS/Frontend/Integration/Leaderboards.md"
-                                },
-                                {
-                                    "name": "Treasure Hunt",
-                                    "text": "SDKS/Frontend/Integration/TreasureHunt.md"
-                                }
-                            ]
                         }
                     ]
                 }
             ]
+        },
+        {
+            "name": "Integration",
+            "sections": [
+                {
+                    "name": "Login",
+                    "text": "Integration/Login.md"                                   
+                },
+                {
+                    "name": "Actions",
+                    "text": "Integration/Actions.md"
+                },
+                {
+                    "name": "Notifications",
+                    "text": "Integration/Notifications.md"
+                },
+                {
+                    "name": "Leaderboards",
+                    "text": "Integration/Leaderboards.md"
+                },
+                {
+                    "name": "Treasure Hunt",
+                    "text": "Integration/TreasureHunt.md"
+                },
+                {
+                    "name": "Badges",
+                    "text": "Integration/Badges.md"
+                }
+            ]      
         }
     ]
 }
