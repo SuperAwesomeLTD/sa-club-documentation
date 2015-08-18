@@ -50,13 +50,7 @@
 				A promise that will:
 				<ul>
 					<li>
-						be resolved with the current user. Example:
-```json
-{
-    id: 42,
-    username: ‘MyUsername’
-}
-```
+						be resolved with the current user. Example: {id: 42, username: ‘MyUsername’}
 					</li>
 					<div>or</div>
 					<li>be rejected with an error</li>
@@ -65,3 +59,102 @@
 		</tr>
 	</tbody>
 </table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="4">Method</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">saUserApi.events.hasTriggeredEvent(parameters)</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th colspan="4">Parameters</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>name</td>
+			<td>type</td>
+			<td>default</td>
+			<td>comment</td>
+		</tr>
+		<tr>
+			<td>eventId</td>
+			<td>integer</td>
+			<td></td>
+			<td>the id of the event</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th colspan="4">Response</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">
+				A promise that will:
+				<ul>
+					<li>be resolved with true if the user has triggered the event, false otherwise</li>
+					<div>or</div>
+					<li>be rejected with an error</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="4">Method</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">saUserApi.events.hasTriggeredEvents(parameters)</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th colspan="4">Parameters</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>name</td>
+			<td>type</td>
+			<td>default</td>
+			<td>comment</td>
+		</tr>
+		<tr>
+			<td>eventIds</td>
+			<td>array of integers</td>
+			<td>[ ]</td>
+			<td>the ids of the events</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th colspan="4">Response</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">
+				A promise that will:
+				<ul>
+					<li>be resolved with an object mapping the event ids to booleans indicating if the events have been triggered. {101: true, 102: false, 103: true, ...}</li>
+					<div>or</div>
+					<li>be rejected with an error</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
