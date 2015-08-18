@@ -194,11 +194,11 @@
                             "name": "Games",
                             "sections": [
                                 {
-                                    "name": "addLevelLeaderboardListener",
+                                    "name": "addLevelLeader...",
                                     "text": "Reference/UserAPIFront/Games/addLevelLeaderboardListener.html"
                                 },
                                 {
-                                    "name": "addGameLeaderboardListener",
+                                    "name": "addGameLeader...",
                                     "text": "Reference/UserAPIFront/Games/addGameLeaderboardListener.html"
                                 }
                             ]

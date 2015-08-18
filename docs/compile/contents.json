@@ -194,11 +194,11 @@
                             "name": "Games",
                             "sections": [
                                 {
-                                    "name": "addLevelLeaderboardListener",
+                                    "name": "addLevelLeader...",
                                     "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.games.addLevelLeaderBoardListener(callback)</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                The callback will be called every time the leaderboard is updated.\n                <br>\n                The parameters are the same as games.getLevelLeaderboard()\n                <br>\n                The callback will receive the same parameters as the success handler of games.getLevelLeaderboard()\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
                                 },
                                 {
-                                    "name": "addGameLeaderboardListener",
+                                    "name": "addGameLeader...",
                                     "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.games.addGameLeaderBoardListener(callback)</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                The callback will be called every time the leaderboard is updated.\n                <br>\n                The parameters are the same as games.getGameLeaderboard()\n                <br>\n                The callback will receive the same parameters as the success handler of games.getGameLeaderboard()\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
                                 }
                             ]
