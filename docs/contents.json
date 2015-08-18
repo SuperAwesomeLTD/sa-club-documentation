@@ -65,16 +65,36 @@
                     "text": "Integration/Notifications.md"
                 },
                 {
-                    "name": "Leaderboards",
-                    "text": "Integration/Leaderboards.md"
+                    "name": "Badges",
+                    "text": "Integration/Badges.md"
                 },
                 {
                     "name": "Treasure Hunt",
                     "text": "Integration/TreasureHunt.md"
                 },
                 {
-                    "name": "Badges",
-                    "text": "Integration/Badges.md"
+                    "name": "Daily Event",
+                    "text": "Integration/DailyEvent.md"
+                },
+                {
+                    "name": "Downloads",
+                    "text": "Integration/Downloads.md"
+                },
+                {
+                    "name": "Competitions",
+                    "text": "Integration/Competitions.md"
+                },
+                {
+                    "name": "Invite a Friend",
+                    "text": "Integration/InviteFriend.md"
+                },
+                {
+                    "name": "Leaderboards",
+                    "text": "Integration/Leaderboards.md"
+                },
+                {
+                    "name": "Friendship Map",
+                    "text": "Integration/FriendshipMap.md"
                 }
             ]      
         },
