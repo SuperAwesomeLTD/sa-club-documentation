@@ -91,6 +91,10 @@
                 {
                     "name": "Application API",
                     "text": "Reference/ApplicationAPI.md" 
+                },
+                {
+                    "name": "User API",
+                    "text": "Reference/UserAPI.md"
                 }
             ]
         },

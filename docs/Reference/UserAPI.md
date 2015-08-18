@@ -1,0 +1,67 @@
+<table>
+	<thead>
+		<tr>
+			<th>Method</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>saUserApi.authentication.getUserId()</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th>Response</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				A promise that will:
+				<ul>
+					<li>be resolved with the id of the current user</li>
+					<div>or</div>
+					<li>be rejected with an error</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th>Method</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>saUserApi.authentication.getUser()</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th>Response</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				A promise that will:
+				<ul>
+					<li>
+						be resolved with the current user. Example:
+						```json
+						{
+						    id: 42,
+						    username: ‘MyUsername’
+						}
+						```
+					</li>
+					<div>or</div>
+					<li>be rejected with an error</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
