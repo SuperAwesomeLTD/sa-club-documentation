@@ -50,7 +50,11 @@
 				A promise that will:
 				<ul>
 					<li>
-						be resolved with the current user. Example: {id: 42, username: ‘MyUsername’}
+						be resolved with the current user. Example: 
+<pre><code class="lang-json">{
+	id: 42,
+	username: ‘MyUsername’
+}</code></pre>
 					</li>
 					<div>or</div>
 					<li>be rejected with an error</li>
@@ -149,7 +153,14 @@
 			<td colspan="4">
 				A promise that will:
 				<ul>
-					<li>be resolved with an object mapping the event ids to booleans indicating if the events have been triggered. {101: true, 102: false, 103: true, ...}</li>
+					<li>be resolved with an object mapping the event ids to booleans indicating if the events have been triggered.
+<pre><code class="lang-json">{
+	101: true,
+	102: false,
+	103: true,
+	...
+}</code></pre>
+					</li>
 					<div>or</div>
 					<li>be rejected with an error</li>
 				</ul>
@@ -260,7 +271,7 @@
 				A promise that will:
 				<ul>
 					<li>be resolved with a game object
-						<pre><code class="lang-json">{
+<pre><code class="lang-json">{
     id: 42,
     name: ‘Game abc’,
     // Indicates if the best score is the maximum or the minimum
