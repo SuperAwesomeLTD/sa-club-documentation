@@ -96,8 +96,18 @@
                     "name": "User API",
                     "sections": [
                         {
-                            "name": "getUserId",
-                            "text": "Reference/UserAPI/getUserId.html"
+                            "name": "Authentication",
+                            "sections": [
+                                {
+                                    "name": "getUserId",
+                                    "text": "Reference/UserAPI/Authentication/getUserId.html"
+                                },
+                                {
+                                    "name": "getUser",
+                                    "text": "Reference/UserAPI/Authentication/getUser.html"
+                                }
+                            ]
+
                         }
                     ]
                 }

@@ -96,8 +96,17 @@
                     "name": "User API",
                     "sections": [
                         {
-                            "name": "getUserId",
-                            "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.authentication.getUserId()</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Response</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                A promise that will:\n                <ul>\n                    <li>be resolved with the id of the current user</li>\n                    <div>or</div>\n                    <li>be rejected with an error</li>\n                </ul>\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
+                            "name": "Authentication",
+                            "sections": [
+                                {
+                                    "name": "getUserId",
+                                    "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.authentication.getUserId()</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Response</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                A promise that will:\n                <ul>\n                    <li>be resolved with the id of the current user</li>\n                    <div>or</div>\n                    <li>be rejected with an error</li>\n                </ul>\n            </td>\n        </tr>\n    </tbody>\n</table>\n"
+                                },
+                                {
+                                    "name": "getUser",
+                                    "text": "<table>\n    <thead>\n        <tr>\n            <th>Method</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>saUserApi.authentication.getUser()</td>\n        </tr>\n    </tbody>\n    <thead>\n        <tr>\n            <th>Response</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\n                A promise that will:\n                <ul>\n                    <li>\n                        be resolved with the current user. Example: \n<pre><code class=\"lang-json\">{\n    id: 42,\n    username: ‘MyUsername’\n}</code></pre>\n                    </li>\n                    <div>or</div>\n                    <li>be rejected with an error</li>\n                </ul>\n            </td>\n        </tr>\n    </tbody>\n</table>"
+                                }
+                            ]
                         }
                     ]
                 }
