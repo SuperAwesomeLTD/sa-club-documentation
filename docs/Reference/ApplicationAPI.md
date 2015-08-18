@@ -25,7 +25,7 @@
 			<td>targetUserIds</td>
 			<td>array of integers</td>
 			<td>[ ]</td>
-			<td>cthe ids of the users of your application that should receive the notification</td>
+			<td>the ids of the users of your application that should receive the notification</td>
 		</tr>
 	</tbody>
 	<thead>
