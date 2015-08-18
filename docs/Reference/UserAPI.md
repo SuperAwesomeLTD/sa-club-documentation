@@ -51,12 +51,12 @@
 				<ul>
 					<li>
 						be resolved with the current user. Example:
-						```json
-						{
-						    id: 42,
-						    username: ‘MyUsername’
-						}
-						```
+```json
+{
+    id: 42,
+    username: ‘MyUsername’
+}
+```
 					</li>
 					<div>or</div>
 					<li>be rejected with an error</li>
