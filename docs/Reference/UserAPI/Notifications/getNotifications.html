@@ -1,0 +1,50 @@
+<table>
+	<thead>
+		<tr>
+			<th>Method</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>saUserApi.games.getNotifications()</td>
+		</tr>
+	</tbody>
+	<thead>
+		<tr>
+			<th>Response</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">
+				A promise that will:
+				<ul>
+					<li>be resolved with the info of the pending notifications
+<pre><code class="lang-json">{
+ 	// Number of notifications
+    count: 123,
+    // Size of the current page (pagination not yet implemented)
+    limit: 10,
+    // Index of the first result of the page (pagination not yet implemented)
+    offset: 0,
+    results: [
+        {
+            id: 1005,
+            appId: 2,
+            description: ‘Congratulations!’,
+            url: ‘http://www.example.com’,
+            // Date object
+            date: …, 
+            // Whether the notification has already been seen by the user
+            read: false
+        }
+    ]
+}</code></pre>
+					</li>
+					<div>or</div>
+					<li>be rejected with an error</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>

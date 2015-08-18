@@ -157,6 +157,19 @@
                                     "text": "Reference/UserAPI/Games/submitScore.html"
                                 }
                             ]
+                        },
+                        {
+                            "name": "Notifications",
+                            "sections": [
+                                {
+                                    "name": "getNotifications",
+                                    "text": "Reference/UserAPI/Notifications/getNotifications.html"
+                                },
+                                {
+                                    "name": "readNotification",
+                                    "text": "Reference/UserAPI/Notifications/readNotification.html"
+                                }
+                            ]
                         }
                     ]
                 }
