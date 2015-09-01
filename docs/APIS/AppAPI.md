@@ -28,14 +28,14 @@ These operations can also be performed directly through our dashboard.
 ![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-club-documentation/develop/docs/img/user-api-backend.png "Application API usage flow")
 
 If you need to call the Application API, the flow will be:
-1. <b>The user will perform an action on your application</b>
-2. <b>This will trigger an ajax request to your backend</b>
-3. <b>Your backend will call a function of our SDK</b>
+1. <span style="font-weight: 800;">The user will perform an action on your application</span>
+2. <span style="font-weight: 800;">This will trigger an ajax request to your backend</span>
+3. <span style="font-weight: 800;">Your backend will call a function of our SDK</span>
 4. <span style="color: gray;">Our SDK will make a request to our API</span>
 5. <span style="color: gray;">Our API will process the request and send a response</span>
 6. <span style="color: gray;">Our SDK will process the response and send it to your application</span>
-7. <b>Your application will process the response and send it back to the frontend</b>
-8. <b>The fronted will process the response and update the page</b>
+7. <span style="font-weight: 800;">Your application will process the response and send it back to the frontend</span>
+8. <span style="font-weight: 800;">The fronted will process the response and update the page</span>
 
 If you call the Application API via a script, only the steps 3-6 will apply.
 
