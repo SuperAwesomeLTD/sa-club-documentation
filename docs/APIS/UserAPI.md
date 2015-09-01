@@ -20,9 +20,9 @@ From the frontend:
 
 ![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-club-documentation/develop/docs/img/user-api-frontend.png "Application API usage flow (frontend)")
 
-1. The user will perform an action on your application
-2. This will trigger a call to our API
+1. <b>The user will perform an action on your application</b>
+2. <b>This will trigger a call to our API</b>
 3. <span style="color: gray;">Our SDK will make a request to our API</span>
 4. <span style="color: gray;">Our API will process the request and send a response</span>
 5. <span style="color: gray;">Our SDK will process the response and send it to your application</span>
-6. Your application will process the response and update the page
+6. <b>Your application will process the response and update the page</b>
