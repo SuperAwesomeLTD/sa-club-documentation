@@ -1,1 +1,1 @@
-The SuperAwesome KWS SDK (Software Development Kit) lets you to easily integrate third-party apps with KWS.
+The SuperAwesome Kids Web Services (KWS) SDK (Software Development Kit) lets you to easily integrate third-party apps and sites with KWS, creating simple and safe user experiences with compliance at the core.

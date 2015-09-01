@@ -31,9 +31,9 @@ If you need to call the Application API, the flow will be:
 1. The user will perform an action on your application
 2. This will trigger an ajax request to your backend
 3. Your backend will call a function of our SDK
-4. Our SDK will make a request to our API
-5. Our API will process the request and send a response
-6. Our SDK will process the response and send it to your application
+4. <span style="color: gray;">Our SDK will make a request to our API</span>
+5. <span style="color: gray;">Our API will process the request and send a response</span>
+6. <span style="color: gray;">Our SDK will process the response and send it to your application</span>
 7. Your application will process the response and send it back to the frontend
 8. The fronted will process the response and update the page
 

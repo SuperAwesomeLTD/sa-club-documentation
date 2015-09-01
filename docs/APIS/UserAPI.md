@@ -22,7 +22,7 @@ From the frontend:
 
 1. The user will perform an action on your application
 2. This will trigger a call to our API
-3. Our SDK will make a request to our API
-4. Our API will process the request and send a response
-5. Our SDK will process the response and send it to your application
+3. <span style="color: gray;">Our SDK will make a request to our API</span>
+4. <span style="color: gray;">Our API will process the request and send a response</span>
+5. <span style="color: gray;">Our SDK will process the response and send it to your application</span>
 6. Your application will process the response and update the page
